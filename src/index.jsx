@@ -1,3 +1,4 @@
+export FormsyAutoComplete from './FormsyAutoComplete';
 export FormsyCheckbox from './FormsyCheckbox';
 export FormsyDate from './FormsyDate';
 export FormsyRadio from './FormsyRadio';
