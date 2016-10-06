@@ -4,7 +4,7 @@ import Formsy from 'formsy-react';
 import AutoComplete from 'material-ui/AutoComplete';
 import { setMuiComponentAndMaybeFocus, debounce } from './utils';
 
-const FormsyText = React.createClass({
+const FormsyAutoComplete = React.createClass({
 
   propTypes: {
     defaultValue: React.PropTypes.any,
@@ -140,4 +140,4 @@ const FormsyText = React.createClass({
   }
 });
 
-export default FormsyText;
+export default FormsyAutoComplete;
