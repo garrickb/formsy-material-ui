@@ -133,7 +133,7 @@ const FormsyAutoComplete = React.createClass({
         onChange={this.handleChange}
         onKeyDown={this.handleKeyDown}
         ref={this.setMuiComponentAndMaybeFocus}
-        value={this.state.value}
+        searchText={this.state.value}
         onNewRequest={this.handleNewRequest}
       />
     );
