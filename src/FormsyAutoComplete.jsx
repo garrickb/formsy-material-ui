@@ -134,7 +134,7 @@ const FormsyText = React.createClass({
         onKeyDown={this.handleKeyDown}
         ref={this.setMuiComponentAndMaybeFocus}
         value={this.state.value}
-        onUpdateInput={this.handleUpdate}
+        onUpdateInput={this.handleUpdateInput}
       />
     );
   }
