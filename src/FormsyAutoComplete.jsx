@@ -69,9 +69,9 @@ const FormsyText = React.createClass({
     if (this.props.onBlur) this.props.onBlur(event);
   },
 
-  handleNewRequest: function handleNewRequest(event) {
-    this.setValue(event.currentTarget.chosenRequest);
-    if (this.props.onUpdateInput) this.props.onUpdateInput(event);
+  handleNewRequest: function handleNewRequest(searchText, dataSource) {
+    this.setValue(searchText);
+    if (this.props.onNewRequest) this.props.onNewRequest(searchText, dataSource);
   },
 
   handleChange: function handleChange(event) {
