@@ -69,8 +69,8 @@ const FormsyText = React.createClass({
     if (this.props.onBlur) this.props.onBlur(event);
   },
 
-  handleUpdateInput: function handleUpdateInput(event) {
-    this.setValue(event.currentTarget.dataSource);
+  handleNewRequest: function handleNewRequest(event) {
+    this.setValue(event.currentTarget.chosenRequest);
     if (this.props.onUpdateInput) this.props.onUpdateInput(event);
   },
 
@@ -134,7 +134,7 @@ const FormsyText = React.createClass({
         onKeyDown={this.handleKeyDown}
         ref={this.setMuiComponentAndMaybeFocus}
         value={this.state.value}
-        onUpdateInput={this.handleUpdateInput}
+        onNewRequest={this.handleNewRequest}
       />
     );
   }
