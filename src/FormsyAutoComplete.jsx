@@ -69,6 +69,11 @@ const FormsyText = React.createClass({
     if (this.props.onBlur) this.props.onBlur(event);
   },
 
+  handleUpdateInput: function handleUpdateInput(event) {
+    this.setValue(event.currentTarget.dataSource);
+    if (this.props.onUpdateInput) this.props.onUpdateInput(event);
+  },
+
   handleChange: function handleChange(event) {
     // Update the value (and so display any error) after a timeout.
     if (this.props.updateImmediately) {
@@ -129,6 +134,7 @@ const FormsyText = React.createClass({
         onKeyDown={this.handleKeyDown}
         ref={this.setMuiComponentAndMaybeFocus}
         value={this.state.value}
+        onUpdateInput={this.handleUpdate}
       />
     );
   }
